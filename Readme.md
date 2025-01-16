@@ -5,7 +5,7 @@
 
 You are required to fetch the details of the highly-rated kickstarter projects by implementing an AJAX call to their APIs.
 
-Use the web API (link : https://raw.githubusercontent.com/saaslabsco/frontend-assignment/refs/heads/master/frontend-assignment.json) ) to fetch the details of specific projects.
+Use the web API (link : https://raw.githubusercontent.com/saaslabsco/frontend-assignment/refs/heads/master/frontend-assignment.json)to fetch the details of specific projects.
 
 ## Minimum Requirements
 

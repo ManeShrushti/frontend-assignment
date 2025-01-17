@@ -1,10 +1,146 @@
-#app-container{
+/* layouts */
+.app-container{
   height: 100%;
   width: 100%;
   overflow: hidden;
+  background-color: var(--app-bg);
+  padding: 2rem;
 }
 
-#main-container{
+.main-container{
   height: 100%;
   width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(90deg, rgba(10, 10, 10, 0.9) 30%, rgba(39, 59, 73, 0.7) 100%), 
+              url('../src/assets/images/main-bg.png');
+  background-size: cover !important; 
+  background-position: center; 
+  background-repeat: no-repeat !important; 
+}
+
+.app-title{
+  color: var(--text-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+/* Table  */
+table {
+  width: 70%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-radius: 5px;
+  color: var(--text-light);
+  background-color: var(--main-bg);
+  border: 1px solid var(--table-border-dark); 
+}
+
+th{
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+}
+
+table, th, td {
+  border-bottom: 1px solid var(--table-border-dark); 
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+tr:nth-child(odd) {
+  background-color: var(--main-bg); 
+}
+
+tr:nth-child(even) {
+  background-color: var(--light-bg); 
+}
+
+/* Pagination buttons and navigation */
+
+.btn {
+  padding: 5px 10px;
+  margin: 0.5rem;
+  height: 2rem;
+  width: 5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: var(--primary-color); 
+  color: var(--text-primary);
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+
+.btn:disabled {
+  background-color: var(--disabled-color);
+  cursor: not-allowed;
+}
+
+.btn-link{
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.btn-link:hover{
+  transform: scale(1.1);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.page-details{
+   display: flex;
+   justify-content: flex-start;
+   padding-left: 1em;
+   color: var(--text-light)
+}
+
+.page-nav{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-number{
+  padding: 0 8px;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border-width: 0px;
+  background-color: var(--disabled-color);
+  margin: 2px;
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+.btn:hover , .page-number:hover {
+  transform: scale(1.1); 
+  background-color: var(--primary-hover-color); 
+}
+
+.active{
+  background-color: var(--primary-color);
+  color: var(--text-primary)
+}
+ 
+/* miscellaneous */
+.mt-1{
+    margin-top: 1rem;
 }

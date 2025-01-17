@@ -17,6 +17,7 @@
   background-size: cover !important; 
   background-position: center; 
   background-repeat: no-repeat !important; 
+  border-radius: 1rem;
 }
 
 .app-title{
@@ -92,6 +93,10 @@ tr:nth-child(even) {
   transition: transform 0.3s ease-in-out;
   text-transform: uppercase;
 }
+.btn-link:disabled{
+  color: var(--disabled-color);
+  cursor: not-allowed;
+}
 
 .btn-link:hover{
   transform: scale(1.1);
@@ -143,4 +148,7 @@ tr:nth-child(even) {
 /* miscellaneous */
 .mt-1{
     margin-top: 1rem;
+}
+.error-text{
+  color: #dc5252
 }
